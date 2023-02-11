@@ -28,6 +28,10 @@ h1{
     font-weight: bold;
     padding-left: 1em;
     margin:auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .linkicon{
