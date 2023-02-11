@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 2% 8%;
+    background-color: rgb(229, 222, 218);
+}
+
+html{scroll-behavior: smooth;}
+
+span{color:red; font-weight: bold;}
+h2{color:rgb(0, 0, 0); margin:0; padding:0; font-family:century gothic; letter-spacing: 5px; font-weight: lighter;}
+
+header{
+    background-image: url(../imagenes/ciudad/playa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 15em;
+    margin: 0;
+    display: flex;
+}
+
+h1{
+    border:solid white;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    font-family: Century Gothic;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding-left: 1em;
+    margin:auto;
+}
+
+.linkicon{
+    margin-right: 10px;
+}
+
+.enlaces a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: century gothic;
+}
+
+.enlaces{
+    height: fit-content;
+    position:relative;
+    letter-spacing: 1em;
+    display:flex;
+    justify-content: space-between;
+}
+
+.enlaces a{
+    padding: 10px 0;
+    width:70vh;
+    
+}
+.enlaces a:hover{
+    color: red;
+    font-weight:bolder;
+    text-shadow:1px 1px 1px #000;
+}
+#linkcontacto{float: right;}
+#jardin{text-align: right;}
+
+.indice{
+    display:flex;
+}
+.provi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position: center;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4),
+    rgba(0,0,0,0.1))
+    , url(../imagenes/ciudad/provi.jpg);
+    width:68%;
+    height: 500px;
+}
+.lista{
+    background-color: rgb(255, 255, 255);
+    width: 32%;
+    padding: 10px 20px;
+    border: solid rgb(255, 88, 88) 10px;
+}
+
+ol{
+    font-family:Century gothic;
+    line-height: 22px;
+    counter-reset: item;
+}
+
+ol a{ text-decoration: none; color:rgb(179, 43, 43);}
+ol a:hover{color: red; font-weight: bold; text-shadow:1px 1px 1px #000;
+}
+
+ul{
+    list-style-type: none;
+}
+ li {
+    display: block;
+}
+li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
