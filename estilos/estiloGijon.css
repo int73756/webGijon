@@ -8,6 +8,7 @@ html{scroll-behavior: smooth;}
 
 span{color:red; font-weight: bold;}
 h2{color:rgb(0, 0, 0); margin:0; padding:0; font-family:century gothic; letter-spacing: 5px; font-weight: lighter;}
+h3{color:black; font-family: century gothic; letter-spacing: 3px; font-size:larger; font-weight: normal;}
 
 header{
     background-image: url(../imagenes/ciudad/playa.jpg);
@@ -65,8 +66,15 @@ h1{
 #linkcontacto{float: right;}
 #jardin{text-align: right;}
 
-.indice{
+.cont{
+    background-color: white;
+    border: solid rgb(255, 88, 88) 10px;
+    padding: 1em;
+}
+
+.indice, .flex {
     display:flex;
+    margin-bottom:30px;
 }
 b{font-weight: 600;}
 strong{font-weight: 600;}
@@ -110,15 +118,10 @@ strong{font-weight: 600;}
 
 #intro{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    margin-top:30px;
 }
 #intro h2{
     margin:10px 15px;}
 #intro .cont{
-    background-color: white;
-    border:solid rgb(255, 88, 88) 10px;
-    padding: 1em;
     width: 55%;
 }
 #intro .labo{
@@ -161,14 +164,10 @@ footer.back:hover{
 }
 
 #toponimia{
-    display: flex;
-    margin-top:30px;
+    margin-bottom:30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #toponimia .cont{
-    background-color: white;
-    border: solid rgb(255, 88, 88) 10px;
-    padding: 1em;
     width: 50%;
 }
 .cerro{
@@ -192,4 +191,85 @@ footer.back:hover{
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     margin-top:2px;
     z-index: 100;
+}
+
+#simbolos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bandera{
+    float:right;
+    margin-top: 25px;
+    width: 30%;
+}
+.bandera img{
+    width:100%;
+}
+.bandera figcaption{
+    font-size:0.8em;
+}
+
+#geografia{
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contdos, #clima{
+    background-color: white;
+    border: solid rgb(255, 88, 88) 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#contdos{
+    border-bottom: none;
+    width:40%;
+}
+#clima{
+    border-top: none;
+}
+#conttres{
+    display: flex;
+}
+#picos{
+    display: flex;
+    width: 60%;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+#picos #gen{
+height:50%;
+width: 100%;
+position:absolute;
+}
+#picos #ñora{
+max-height: 50%;
+width: 100%;
+position:absolute;
+bottom:0;
+border-top: solid rgb(255, 88, 88) 3px;
+border-bottom: solid rgb(255, 88, 88) 10px;
+}
+#picos p{
+    position: absolute;
+    z-index: 100;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+#a{
+    top:0;
+    left:20px;
+}
+#b{
+    top:50%;
+    right: 20px;
+}
+
+#clima h3{
+    margin-top:-20px;
+}
+#pp{
+    margin-top: -4px;
 }
