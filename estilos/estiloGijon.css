@@ -237,6 +237,8 @@ footer.back:hover{
     overflow: hidden;
     flex-direction: column;
     position: relative;
+    padding-left:20px;
+    border-bottom:solid rgb(255, 88, 88) 10px;
 }
 #picos #gen{
 height:50%;
@@ -247,9 +249,8 @@ position:absolute;
 max-height: 50%;
 width: 100%;
 position:absolute;
-bottom:0;
-border-top: solid rgb(255, 88, 88) 3px;
-border-bottom: solid rgb(255, 88, 88) 10px;
+bottom:20px;
+border-top: solid rgb(229, 222, 218) 10px;
 }
 #picos p{
     position: absolute;
@@ -260,11 +261,11 @@ border-bottom: solid rgb(255, 88, 88) 10px;
 }
 #a{
     top:0;
-    left:20px;
+    left:30px;
 }
 #b{
-    top:50%;
-    right: 20px;
+    top:47%;
+    right: 30px;
 }
 
 #clima h3{
@@ -273,3 +274,65 @@ border-bottom: solid rgb(255, 88, 88) 10px;
 #pp{
     margin-top: -4px;
 }
+
+.puerto{
+    position:relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.puerto p{
+    position: absolute;
+    color:white;
+    top:0;
+    right: 15em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+}
+.puerto img{
+    width: 70%;
+}
+
+#patrimonio .cont{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+}
+#patrimonio aside{
+    position: relative;
+    width:40%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+#patrimonio aside p{
+    font-size:0.9em;
+    position: absolute;
+    color:white;
+    left:10px;
+    bottom:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+#patrimonio img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.temperaturas{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.temperaturas caption{color:white;font-weight: bold; background-color: gray;}
+.temperaturas th{background-color: rgb(122, 118, 118); color:white}
+.temperaturas .bd{border-right: solid 5px gray;}
+.temperaturas .nc{background-color: rgb(249, 229, 191);}
+.temperaturas .nm{background-color: rgb(247, 190, 49);}
+.temperaturas .no{background-color: rgb(255, 94, 0);color:white}
+.temperaturas .ac{background-color:rgb(183, 251, 251);}
+.temperaturas .am{background-color: rgb(45, 195, 255);}
+.temperaturas .ao{background-color: rgb(0, 68, 255);color:white}
+.temperaturas td:hover,th:hover{filter:brightness(150%);}
