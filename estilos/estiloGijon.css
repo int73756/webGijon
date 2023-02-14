@@ -1,16 +1,36 @@
-body{
+body {
     margin: 0;
     padding: 2% 8%;
     background-color: rgb(229, 222, 218);
 }
 
-html{scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+}
 
-span{color:red; font-weight: bold;}
-h2{color:rgb(0, 0, 0); margin:0; padding:0; font-family:century gothic; letter-spacing: 5px; font-weight: lighter;}
-h3{color:black; font-family: century gothic; letter-spacing: 3px; font-size:larger; font-weight: normal;}
+span {
+    color: red;
+    font-weight: bold;
+}
 
-header{
+h2 {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+h3 {
+    color: black;
+    font-family: century gothic;
+    letter-spacing: 3px;
+    font-size: larger;
+    font-weight: normal;
+}
+
+header {
     background-image: url(../imagenes/ciudad/playa.jpg);
     background-size: cover;
     background-position: center;
@@ -19,8 +39,8 @@ header{
     display: flex;
 }
 
-h1{
-    border:solid white;
+h1 {
+    border: solid white;
     color: white;
     text-transform: uppercase;
     letter-spacing: 1em;
@@ -28,104 +48,139 @@ h1{
     font-size: 1.7em;
     font-weight: bold;
     padding-left: 1em;
-    margin:auto;
+    margin: auto;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; 
+    user-select: none;
 }
 
-.linkicon{
+.linkicon {
     margin-right: 10px;
 }
 
-.enlaces a{
+.enlaces a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: century gothic;
 }
 
-.enlaces{
+.enlaces {
     height: fit-content;
-    position:relative;
+    position: relative;
     letter-spacing: 1em;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-.enlaces a{
+.enlaces a {
     padding: 10px 0;
-    width:70vh;
-    
-}
-.enlaces a:hover{
-    color: red;
-    font-weight:bolder;
-    text-shadow:1px 1px 1px #000;
-}
-#linkcontacto{float: right;}
-#jardin{text-align: right;}
+    width: 70vh;
 
-.cont{
+}
+
+.enlaces a:hover {
+    color: red;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#linkcontacto {
+    float: right;
+}
+
+#jardin {
+    text-align: right;
+}
+
+.cont {
     background-color: white;
     border: solid rgb(255, 88, 88) 10px;
     padding: 1em;
 }
 
-.indice, .flex {
-    display:flex;
-    margin-bottom:30px;
+.indice,
+.flex {
+    display: flex;
+    margin-bottom: 30px;
 }
-b{font-weight: 600;}
-strong{font-weight: 600;}
-.provi{
+
+b {
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.provi {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position: center;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.2),
-    rgba(0,0,0,0.1))
-    , url(../imagenes/ciudad/provi.jpg);
-    width:68%;
-    position:relative;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.1)), url(../imagenes/ciudad/provi.jpg);
+    width: 68%;
+    position: relative;
 }
-.provi p{
+
+.provi p {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0.5em 1.2em;
     font-size: small;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-.lista{
+.lista {
     background-color: rgb(255, 255, 255);
     width: 32%;
     padding: 10px 20px;
     border: solid rgb(255, 88, 88) 10px;
 }
-.lista ol{
-    font-family:Century gothic;
+
+.lista ol {
+    font-family: Century gothic;
     line-height: 22px;
     counter-reset: item;
 }
-.lista ol a{ text-decoration: none; color:rgb(179, 43, 43);}
-.lista ol a:hover{color: red; font-weight: bold; text-shadow:1px 1px 1px #000;
-}
-.lista li {display: block;}
-.lista li:before {content: counters(item, ".") " ";counter-increment: item;}
 
-#intro{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.lista ol a {
+    text-decoration: none;
+    color: rgb(179, 43, 43);
 }
-#intro h2{
-    margin:10px 15px;}
-#intro .cont{
+
+.lista ol a:hover {
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.lista li {
+    display: block;
+}
+
+.lista li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
+
+#intro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#intro h2 {
+    margin: 10px 15px;
+}
+
+#intro .cont {
     width: 55%;
 }
-#intro .labo{
-    
+
+#intro .labo {
+
     background-image: url(../imagenes/ciudad/laboral.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -133,275 +188,455 @@ strong{font-weight: 600;}
     width: 45%;
     position: relative;
 }
-#wikiast{color:red;}
-#intro .labo p{
+
+#wikiast,
+#giardino {
+    color: red;
+}
+
+#intro .labo p {
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position:absolute;
+    position: absolute;
     font-size: 0.9em;
     bottom: 0;
     right: 2em;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
-footer.back{
+
+footer.back {
     background-color: rgb(255, 174, 174);
-    width:fit-content;
+    width: fit-content;
     padding: 0px 9px 3px;
-    margin:auto;
+    margin: auto;
     border-radius: 2em;
 }
-footer.back a{
-    color:rgb(255, 255, 255);
+
+footer.back a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 0.85em;
 }
-footer.back:hover{
+
+footer.back:hover {
     background-color: rgb(255, 0, 0);
     box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0 0  0 0,
-             0.3em 0.3em 1em rgba(0,0,0,0.7);
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 0,
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.7);
 }
 
-#toponimia{
-    margin-bottom:30px;
+#toponimia {
+    margin-bottom: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#toponimia .cont{
+
+#toponimia .cont {
     width: 50%;
 }
-.cerro{
+
+.cerro {
     position: relative;
     display: flex;
     width: 50%;
     overflow: hidden;
     justify-content: center;
 }
-.cerro img{
-    height:100%;
-    position:absolute;
+
+.cerro img {
+    height: 100%;
+    position: absolute;
 }
-.cerro p{
+
+.cerro p {
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position:absolute;
+    position: absolute;
     font-size: 1em;
     top: 0;
     right: 2em;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    margin-top:2px;
+    margin-top: 2px;
     z-index: 100;
 }
 
-#simbolos{
+#simbolos {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.bandera{
-    float:right;
+
+.bandera {
+    float: right;
     margin-top: 25px;
     width: 30%;
 }
-.bandera img{
-    width:100%;
-}
-.bandera figcaption{
-    font-size:0.8em;
+
+.bandera img {
+    width: 100%;
 }
 
-#geografia{
+.bandera figcaption {
+    font-size: 0.8em;
+}
+
+#geografia {
     flex-direction: column;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#contdos, #clima{
+#contdos,
+#clima {
     background-color: white;
     border: solid rgb(255, 88, 88) 10px;
     padding: 1em;
     display: flex;
     flex-direction: column;
 }
-#contdos{
+
+#contdos {
     border-bottom: none;
-    width:40%;
+    width: 40%;
 }
-#clima{
+
+#clima {
     border-top: none;
 }
-#conttres{
+
+#conttres {
     display: flex;
 }
-#picos{
+
+#picos {
     display: flex;
     width: 60%;
     overflow: hidden;
     flex-direction: column;
     position: relative;
-    padding-left:20px;
-    border-bottom:solid rgb(255, 88, 88) 10px;
+    padding-left: 20px;
+    border-bottom: solid rgb(255, 88, 88) 10px;
 }
-#picos #gen{
-height:50%;
-width: 100%;
-position:absolute;
+
+#picos #gen {
+    height: 50%;
+    width: 100%;
+    position: absolute;
 }
-#picos #ñora{
-max-height: 50%;
-width: 100%;
-position:absolute;
-bottom:20px;
-border-top: solid rgb(229, 222, 218) 10px;
+
+#picos #ñora {
+    max-height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    border-top: solid rgb(229, 222, 218) 10px;
 }
-#picos p{
+
+#picos p {
     position: absolute;
     z-index: 100;
-    color:white;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
-#a{
-    top:0;
-    left:30px;
+
+#a {
+    top: 0;
+    left: 30px;
 }
-#b{
-    top:47%;
+
+#b {
+    top: 47%;
     right: 30px;
 }
 
-#clima h3{
-    margin-top:-20px;
+#clima h3 {
+    margin-top: -20px;
 }
-#pp{
+
+#pp {
     margin-top: -4px;
 }
 
-.puerto{
-    position:relative;
+.puerto {
+    position: relative;
     margin-bottom: 50px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
-.puerto p{
+
+.puerto p {
     position: absolute;
-    color:white;
-    top:0;
+    color: white;
+    top: 0;
     right: 12em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 
 }
-.puerto img{
+
+.puerto img {
     width: 80%;
 }
 
-#patrimonio .cont{
+#patrimonio .cont {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 60%;
 }
-#patrimonio aside{
+
+#patrimonio aside {
     position: relative;
-    width:40%;
+    width: 40%;
     overflow: hidden;
     justify-content: center;
     align-items: center;
 }
-#patrimonio aside p{
-    font-size:0.9em;
+
+#patrimonio aside p {
+    font-size: 0.9em;
     position: absolute;
-    color:white;
-    left:10px;
-    bottom:0;
+    color: white;
+    left: 10px;
+    bottom: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
-#patrimonio img{
+
+#patrimonio img {
     max-width: 100%;
     min-height: 100%;
     object-fit: cover;
 }
 
-.temperaturas{
+.temperaturas {
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
 }
-.temperaturas caption{color:white;font-weight: bold; background-color: gray;}
-.temperaturas th{background-color: rgb(122, 118, 118); color:white}
-.temperaturas .bd{border-right: solid 5px gray;}
-.temperaturas .nc{background-color: rgb(249, 229, 191);}
-.temperaturas .nm{background-color: rgb(247, 190, 49);}
-.temperaturas .no{background-color: rgb(255, 94, 0);color:white}
-.temperaturas .ac{background-color:rgb(183, 251, 251);}
-.temperaturas .am{background-color: rgb(45, 195, 255);}
-.temperaturas .ao{background-color: rgb(0, 68, 255);color:white}
-.temperaturas td:hover,th:hover{filter:brightness(150%);}
 
-#cultura{flex-direction: column;}
-#cultura .avion{
+.temperaturas caption {
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.temperaturas th {
+    background-color: rgb(122, 118, 118);
+    color: white
+}
+
+.temperaturas .bd {
+    border-right: solid 5px gray;
+}
+
+.temperaturas .nc {
+    background-color: rgb(249, 229, 191);
+}
+
+.temperaturas .nm {
+    background-color: rgb(247, 190, 49);
+}
+
+.temperaturas .no {
+    background-color: rgb(255, 94, 0);
+    color: white
+}
+
+.temperaturas .ac {
+    background-color: rgb(183, 251, 251);
+}
+
+.temperaturas .am {
+    background-color: rgb(45, 195, 255);
+}
+
+.temperaturas .ao {
+    background-color: rgb(0, 68, 255);
+    color: white
+}
+
+.temperaturas td:hover,
+th:hover {
+    filter: brightness(150%);
+}
+
+#cultura {
+    flex-direction: column;
+}
+
+#cultura .avion {
     display: flex;
 }
-#cultura .cont{
+
+.avion .cont {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 40%;
     border-bottom: none;
+    z-index: 10;
 }
-#cultura .aereo{
-    width:60%;
+
+#cultura .aereo {
+    width: 60%;
     position: relative;
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    z-index: -20;
 }
-.aereo img{
+
+.aereo img {
     max-width: 100%;
     min-height: 100%;
     object-fit: cover;
+    object-position: 67%;
 }
-.aereo p{
-    font-size:0.9em;
+
+.aereo p {
+    font-size: 0.9em;
     position: absolute;
-    color:white;
-    right:10px;
-    top:0;
+    color: white;
+    right: 10px;
+    top: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-.imagenes{
+.imagenes {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     overflow: hidden;
 }
-.solidaridad{
+
+.solidaridad {
     position: relative;
     width: 50%;
 }
-.sidra{
+
+.sidra {
     position: relative;
-    width:50%;
+    width: 50%;
 }
-.solidaridad img{
+
+.solidaridad img {
     display: inline-block;
-    width:100%;
+    width: 100%;
 }
-.sidra img{
+
+.sidra img {
     display: inline-block;
-    width:100%;
+    width: 100%;
     margin-left: 30px;
 }
-.solidaridad p, .sidra p{
+
+.solidaridad p,
+.sidra p {
     position: absolute;
-    color:white;
-    top:0;
+    color: white;
+    top: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 0.9em;
 }
-.sidra p{
+
+.sidra p {
     right: 1em;
 }
-.solidaridad p{
+
+.solidaridad p {
     left: 1em;
+}
+
+#museinos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -10px;
+}
+
+#ct {
+    margin-top: -10px;
+    z-index: 10;
+}
+
+#ct .cont {
+    width: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: none;
+    border-bottom: none;
+    margin-top: -30px;
+    border-right: none;
+}
+
+.jovell {
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-top: solid rgb(255, 88, 88) 10px;
+    border-bottom: solid rgb(255, 88, 88) 10px;
+    border-left: solid rgb(255, 88, 88) 10px;
+}
+
+.jovell img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+
+}
+
+#literatura {
+    margin-top: -50px;
+}
+
+#literatura .cont {
+    border-top: none;
+    border-bottom: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#gastronomia .cont {
+    border-top: none;
+    padding-top: 0;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gastronomia .cont h3 {
+    margin-top: 0px;
+}
+
+#deportes {
+    margin-top: 25px;
+}
+
+.pr {
+    border-top: solid rgb(255, 88, 88) 10px;
+    width: 40%;
+    overflow: hidden;
+}
+
+.pr img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.molinon {
+    height:500px;
+    margin:auto;
+    position: relative;
+}
+.molinon p{
+    color: white;
+    position: absolute;
+    top:-10px;
+    left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 2px 5px rgb(0, 0, 0);;
+    font-weight: bold;
+}
+.molinon img {
+    object-fit: cover;
+    width: 900px;
+    height: 500px;
+    object-position: -4em -7em;
 }
