@@ -7,7 +7,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
 span {
     color: red;
     font-weight: bold;
@@ -584,6 +583,9 @@ th:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#gastronomia{
+    width:100%;
+}
 #gastronomia .cont {
     border-top: none;
     padding-top: 0;
@@ -697,10 +699,10 @@ select {
     margin-right: 3em;
     width: 20vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
+    
 }
-select{
-    color:rgb(123, 122, 122)
+input::placeholder, textarea::placeholder{
+    font-style: italic;
 }
 #contacto h2 {
     margin-bottom: 1em;
@@ -709,13 +711,11 @@ select{
     text-shadow: 3px 3px 5px #000000;
     color: white
 }
-
 #contacto textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 40vw;
     margin-bottom: 2em;
     resize: none;
-    font-style: italic;
 }
 
 #botones {
