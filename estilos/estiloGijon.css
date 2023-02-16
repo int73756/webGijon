@@ -584,10 +584,6 @@ th:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#gastronomia{
-    position:relative;
-    width:70%;
-}
 #gastronomia .cont {
     border-top: none;
     padding-top: 0;
