@@ -453,6 +453,10 @@ th:hover {
     flex-direction: column;
 }
 
+#cultura .cont {
+    border-left: none;
+}
+
 #cultura .avion {
     display: flex;
 }
@@ -460,8 +464,7 @@ th:hover {
 .avion .cont {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 40%;
-    border-bottom: none;
-    z-index: 10;
+
 }
 
 #cultura .aereo {
@@ -470,11 +473,12 @@ th:hover {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    z-index: -20;
+    border-right: solid rgb(255, 88, 88) 10px;
+    border-bottom: solid rgb(255, 88, 88) 10px;
 }
 
 .aereo img {
-    max-width: 100%;
+    width: 100%;
     min-height: 100%;
     object-fit: cover;
     object-position: 67%;
@@ -530,14 +534,16 @@ th:hover {
     left: 1em;
 }
 
-#museinos {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#museos .cont{
+    border-top: none;
+    border-left: solid rgb(255,88,88) 10px;
     margin-top: -10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #ct {
     margin-top: -10px;
-    z-index: 10;
+    border-left: solid rgb(255,88,88) 10px;
 }
 
 #ct .cont {
@@ -569,6 +575,7 @@ th:hover {
 
 #literatura {
     margin-top: -50px;
+    border-left: solid rgb(255, 88, 88) 10px;
 }
 
 #literatura .cont {
@@ -595,18 +602,20 @@ th:hover {
 
 .pr {
     border-top: solid rgb(255, 88, 88) 10px;
+    border-right: solid rgb(255, 88, 88) 10px;
     width: 40%;
     overflow: hidden;
 }
 
 .pr img {
     object-fit: cover;
-    height: 100%;
+    min-height: 100%;
+    max-width: 100%;
 }
 
 .molinon {
     height: 500px;
-    width: 100%;
+    width: fit-content;
     margin: auto;
     position: relative;
     display: flex;
@@ -618,10 +627,9 @@ th:hover {
     color: white;
     position: absolute;
     top: 10px;
-    left: 270px;
+    left: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 2px 5px rgb(0, 0, 0);
-    ;
     font-weight: bold;
 }
 
@@ -637,6 +645,7 @@ th:hover {
 
 #fiestas {
     margin-top: 50px;
+    border-left: rgb(255,88,88) solid 10px;
 }
 
 #fiestas .cont {
@@ -648,10 +657,7 @@ th:hover {
     width: 80%;
     overflow: hidden;
     margin: auto;
-}
-
-#fuente {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1em;
 }
 
 #ultimo {
@@ -663,6 +669,7 @@ th:hover {
     margin-top: 50px;
     background-image: linear-gradient(160deg, rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0)), url(../imagenes/ciudad/lloca.jpg);
+    background-color: black;
     font-family: Century Gothic;
     padding-left: 2em;
     padding-top: inherit;
@@ -680,18 +687,22 @@ th:hover {
 }
 
 input,
-textarea {
+textarea, select {
     font-size: 1em;
+    padding-left: 0.5em;
 }
 
 input[type=text],
-input[type=select] {
+select {
     display: inline-block;
     margin-right: 3em;
     width: 20vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
-
+select{
+    color:rgb(123, 122, 122)
+}
 #contacto h2 {
     margin-bottom: 1em;
     margin-top: 0;
@@ -705,6 +716,7 @@ input[type=select] {
     width: 40vw;
     margin-bottom: 2em;
     resize: none;
+    font-style: italic;
 }
 
 #botones {
@@ -737,12 +749,23 @@ input.boton:hover {
 }
 
 #last {
-    margin: auto;
-    width: fit-content;
+    margin-top: 2em;
+    height: 8em;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(229, 222, 218), rgb(250, 76, 76));
+    position: absolute;
+    left: 0;
+    text-shadow: 0.2em 0.2em 0.2em #ffff;
 }
 
 .finale {
     font-family: segoe script;
     font-size: 2em;
-    margin: 0.5em
+    margin-top: 0.8em;
+    width: 100%;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
