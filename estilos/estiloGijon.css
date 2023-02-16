@@ -588,7 +588,7 @@ th:hover {
 #gastronomia .cont {
     border-top: none;
     padding-top: 0;
-    width: 86%;
+    width: 70%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -603,7 +603,7 @@ th:hover {
 .pr {
     border-top: solid rgb(255, 88, 88) 10px;
     border-right: solid rgb(255, 88, 88) 10px;
-    width: 14%;
+    width: 30%;
     overflow: hidden;
 }
 
