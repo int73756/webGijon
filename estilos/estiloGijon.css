@@ -7,6 +7,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 span {
     color: red;
     font-weight: bold;
@@ -52,8 +53,9 @@ h1 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: 0.2s;
 }
-
+h1:hover{scale: 120%;}
 .linkicon {
     margin-right: 10px;
 }
@@ -62,6 +64,10 @@ h1 {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: century gothic;
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .enlaces {
@@ -71,19 +77,11 @@ h1 {
     justify-content: space-between;
 }
 
-.enlaces a {
-    padding: 10px 0;
-    width: 40%;
-}
-
 .enlaces a:hover {
-    color: red;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     text-shadow: 1px 1px 1px #000;
-}
-
-#jardin {
-    text-align: right;
+    background-color: rgb(255, 88, 88); 
 }
 
 .cont {
@@ -199,6 +197,7 @@ footer.back {
     padding: 0px 9px 3px;
     margin: auto;
     border-radius: 2em;
+    transition:0.2s;
 }
 
 footer.back a {
@@ -589,7 +588,7 @@ th:hover {
 #gastronomia .cont {
     border-top: none;
     padding-top: 0;
-    width: 100%;
+    width: 70%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -604,7 +603,7 @@ th:hover {
 .pr {
     border-top: solid rgb(255, 88, 88) 10px;
     border-right: solid rgb(255, 88, 88) 10px;
-    width: 30%;
+    width: 40%;
     overflow: hidden;
 }
 

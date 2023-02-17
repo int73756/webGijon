@@ -9,7 +9,7 @@ html {
 }
 
 span {
-    color: rgb(54, 170, 67);
+    color: rgb(24, 106, 33);
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -42,6 +42,7 @@ header {
     margin: 0;
     display: flex;
 }
+
 h1 {
     border: solid white;
     color: white;
@@ -49,7 +50,6 @@ h1 {
     letter-spacing: 0.6em;
     font-family: Century Gothic;
     font-size: 1.9em;
-    font-weight: bold;
     padding-left: 1em;
     margin: auto;
     -webkit-user-select: none;
@@ -58,12 +58,40 @@ h1 {
     user-select: none;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(255, 0, 0);
+    transition: 0.2s;
+}
+h1:hover{
+    scale: 110%;
 }
 
+.linkicon {
+    margin-right: 10px;
+}
+.enlaces a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: century gothic;
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    transition: 0.4s;
+}
+.enlaces {
+    height: fit-content;
+    letter-spacing: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.enlaces a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px #000000;
+    background-color: rgba(1, 93, 1, 0.558);
+}
 
 .fondo{
-    background-image: url(../imagenes/jardinBotanico/bordes.jpg);
-    margin:2.5em 0;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4))
+    ,url(../imagenes/jardinBotanico/bordes.jpg);
+    margin:0 0 30px;
     padding: 0.7em;
     height: fit-content;
 }
@@ -73,4 +101,150 @@ h1 {
     margin:auto;
     padding:0.6em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fotos{
+    margin-bottom: 30px;
+    height: fit-content;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+img{transition: 0.3s;}
+img:hover{
+    scale: 103%;
+}
+
+#contacto {
+    background-color: rgba(101, 133, 105, 0.536);
+    font-family: Century Gothic;
+    padding-left: 2em;
+    padding-top: inherit;
+    background-position: right 70%;
+    background-size: cover;
+    padding-bottom: 2em;
+    margin:50px;
+}
+
+#contacto label {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    text-shadow: 3px 3px 4px #000000;
+    color: white;
+}
+
+input,
+textarea, select {
+    font-size: 1em;
+    padding-left: 0.5em;
+}
+
+input[type=text],
+select {
+    display: inline-block;
+    margin-right: 3em;
+    width: 20vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+input::placeholder, textarea::placeholder{
+    font-style: italic;
+}
+#contacto h2 {
+    margin-bottom: 1em;
+    margin-top: 0;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px #000000;
+    color: white
+}
+#contacto textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40vw;
+    margin-bottom: 2em;
+    resize: none;
+}
+
+#botones {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: auto;
+}
+
+input.boton {
+    height: 2em;
+    background-color: rgb(81, 109, 78);
+    border: none;
+    border-radius: 1em;
+    font-size: larger;
+    color: white;
+    width: 15em;
+    text-shadow: 1px 1px 1px #000000;
+    border:solid white 0.05em;
+    transition: 0.2s;
+}
+
+input.boton:hover {
+    filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
+    /* background-color: rgba(81, 109, 78, 0.779); */
+    filter:brightness(1.3);
+    scale: 120%;
+}
+
+.textarea {
+    display: flex;
+    align-items: start;
+}
+#fondocontact{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+}
+
+#last {
+    margin-top: 2em;
+    height: 8em;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(229, 222, 218), rgb(63, 82, 61));
+    position: absolute;
+    left: 0;
+    text-shadow: 0.2em 0.2em 0.2em #ffff;
+}
+
+.finale {
+    font-family: segoe script;
+    font-size: 2em;
+    margin-top: 0.8em;
+    width: 100%;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#goback{
+    position:fixed;
+    bottom:7vh;
+    right: 2vw;
+    border-radius: 50%;
+    border:solid gray;
+    height: 7vh;
+    width: 7vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+    touch-action: pinch-zoom;
+    color:gray;
+    font-size: xx-large;
+    text-align: center;
+    background: none;
+    text-decoration: none;
+}
+#goback:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.4), 0 17px 50px 0 rgba(0,0,0,0.4);
+    filter:brightness(1.5);
+    color:black;
+    border:solid black;
 }
