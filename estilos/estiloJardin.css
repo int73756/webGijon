@@ -188,7 +188,6 @@ input.boton {
 
 input.boton:hover {
     filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
-    /* background-color: rgba(81, 109, 78, 0.779); */
     filter:brightness(1.3);
     scale: 120%;
 }
@@ -235,7 +234,6 @@ input.boton:hover {
     width: 7vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.3s;
-    touch-action: pinch-zoom;
     color:gray;
     font-size: xx-large;
     text-align: center;
